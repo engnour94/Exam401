@@ -7,10 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+
+        <a href="/">Home</a>
+        <a href="/products"> all products</a>
+    </header>
+
 <div>
+
+
     <% info.forEach(data=>{%> 
-        <img src="<%=data.image %>" alt="">
+        <% if(data){%> 
+
+            <img src="<%=data.image %>" alt="">
             <p><b>name</b> <%=data.name %> </p>
             <p><b>price</b> <%=data.price %> </p>
          
@@ -20,6 +29,11 @@
 </form>
 
 <hr>
+
+            <% } if(data=null){ %>
+                <p>no product in my</p>
+                <%} %>
+ 
                 <%}) %>
 
 </div>

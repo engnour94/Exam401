@@ -1,0 +1,28 @@
+header{
+    background-color: pink;
+    height: 10%;
+}
+
+.card{
+background-color: rgb(224, 212, 235);
+width: 300px;
+margin: 20px;
+}
+
+body{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main{
+    width: 960px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+	 
+
+}

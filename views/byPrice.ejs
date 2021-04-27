@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
 
-    <div>
+    <header>
+
+        <a href="/">Home</a>
+        <a href="/products"> all products</a>
+    </header>
+    <main>
+
+   
     <% info.forEach(data=>{%> 
+
+        <div class="card">
 <img src="<%=data.image_link %>" alt="">
     <p><b>name</b> <%=data.name %> </p>
     <p><b>price</b> <%=data.price %> </p>
     <p><b>description</b> <%=data.description %> </p>
 <hr>
+</div>
         <%}) %> 
 
-    </div>
+    
+
+</main>
 </body>
 </html>
