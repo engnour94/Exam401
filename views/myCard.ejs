@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div>
+    <% info.forEach(data=>{%> 
+        <img src="<%=data.image %>" alt="">
+            <p><b>name</b> <%=data.name %> </p>
+            <p><b>price</b> <%=data.price %> </p>
+         
+       
+<form action="/details/<%=data.id%>" method="get">
+<input type="submit" value="views details">
+</form>
+
+<hr>
+                <%}) %>
+
+</div>
+
+
+</body>
+</html>

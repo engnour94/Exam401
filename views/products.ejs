@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% info.forEach(data=>{%> 
+        <img src="<%=data.image %>" alt="">
+            <p><b>name</b> <%=data.name %> </p>
+            <p><b>price</b> <%=data.price %> </p>
+            <p><b>description</b> <%=data.description %> </p>
+       
+<form action="/myProduct" method="post">
+    <input type="hidden" name="image" value="<%=data.image %>">
+    <input type="hidden" name="name" value="<%=data.name %>">
+    <input type="hidden" name="price" value="<%=data.price %>">
+    <input type="hidden" name="description" value="<%=data.description %>">
+<input type="submit" value="add-to-card">
+</form>
+
+<hr>
+                <%}) %>  
+
+</body>
+</html>
